@@ -1,0 +1,31 @@
+<h1>Listing question_data</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Asked by</th>
+    <th>String</th>
+    <th>Question asked</th>
+    <th>Answered</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @question_data.each do |question_datum| %>
+  <tr>
+    <td><%= question_datum.date %></td>
+    <td><%= question_datum.asked_by %></td>
+    <td><%= question_datum.string %></td>
+    <td><%= question_datum.question_asked %></td>
+    <td><%= question_datum.answered %></td>
+    <td><%= link_to 'Show', question_datum %></td>
+    <td><%= link_to 'Edit', edit_question_datum_path(question_datum) %></td>
+    <td><%= link_to 'Destroy', question_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Question datum', new_question_datum_path %>

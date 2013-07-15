@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: MyString
+  asked_by: MyString
+  string: MyString
+  question_asked: MyString
+  answered: false
+
+two:
+  date: MyString
+  asked_by: MyString
+  string: MyString
+  question_asked: MyString
+  answered: false

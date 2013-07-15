@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @question_datum.date %>
+</p>
+
+<p>
+  <b>Asked by:</b>
+  <%= @question_datum.asked_by %>
+</p>
+
+<p>
+  <b>String:</b>
+  <%= @question_datum.string %>
+</p>
+
+<p>
+  <b>Question asked:</b>
+  <%= @question_datum.question_asked %>
+</p>
+
+<p>
+  <b>Answered:</b>
+  <%= @question_datum.answered %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_datum_path(@question_datum) %> |
+<%= link_to 'Back', question_data_path %>
