@@ -1,5 +1,0 @@
-App a day project for Ruby on Rails Silver Bootcamp.
-
-Favorite Questions assignment.
-
-Generated project using scaffolding.
